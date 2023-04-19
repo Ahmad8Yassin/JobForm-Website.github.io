@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job application form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Job application form</h1>
+    <p id="description">Enter your personal informations</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name<input type="text" id="name" placeholder="Enter Your Name" required> </label>
+
+      <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Enter Your Email" required></label>
+
+      <label for="number" id="number-label">Age <span id="optional">(optional)</span><input type="number" id="number" placeholder="Enter Your Age" min="8" max="30">
+      
+      <p id="droplist">What is your academic level?</p>
+      <select id="dropdown">
+        <option>High school diploma</option>
+        <option>college</option>
+        <option>university</option>
+        <option>Other</option>
+      </select>
+      <div class="space"></div>
+      <p>Do you like make friendships with your colleagues at work?</p>
+      <input id="radio" type="radio" value="name" name="radio"><span>Yes</span><br>
+      <input id="radio" type="radio" value="name" name="radio"><span>No</span><br>
+            <input id="radio" type="radio" value="name" name="radio"><span>Not sure</span><br>
+<div class="space"></div>
+      <p id="droplist">What is your favorite programming field?</p>
+      <select id="dropdown">
+        <option>Game development</option>
+        <option>Web designer</option>
+        <option>Application development</option>
+        <option>Other</option>
+      </select>
+      <div class="space"></div>
+      <p>What programming languages do you know?</p>
+      <input id="check-box" type="checkbox" value="name"><span>Html</span><br>
+      <input id="check-box" type="checkbox" value="name"><span>Css</span><br>
+            <input id="check-box" type="checkbox" value="name"><span>JavaScript </span><br>
+      <input id="check-box" type="checkbox" value="name"><span>TypeScript</span><br>
+      <input id="check-box" type="checkbox" value="name"><span>C#</span><br>
+      <input id="check-box" type="checkbox" value="name"><span>C++</span>
+      <div class="space"></div>
+      <p>Any Comment ?</p>
+      <textarea placeholder="Enter Your comment..."></textarea><br>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
